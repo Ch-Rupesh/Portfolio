@@ -123,24 +123,15 @@ export default function ContactPage() {
                   key="form"
                   initial={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  /* Netlify Forms attributes */
                   name="contact"
                   method="POST"
-                  data-netlify="true"
-                  data-netlify-honeypot="bot-field"
                   onSubmit={handleSubmit}
                   className="space-y-5"
                   ref={formRef}
                 >
-                  {/* Required hidden inputs for Netlify Forms */}
+                  {/* Hidden input required for Netlify Forms submission */}
                   <input type="hidden" name="form-name" value="contact" />
-                  {/* Honeypot anti-spam field */}
-                  <p className="hidden">
-                    <label>
-                      Don&apos;t fill this out if you&apos;re human:{" "}
-                      <input name="bot-field" />
-                    </label>
-                  </p>
+                  <input type="hidden" name="bot-field" value="" />
 
                   <div>
                     <label
