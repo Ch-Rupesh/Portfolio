@@ -30,6 +30,13 @@ const educationTimeline = [
     description:
       "Completed higher secondary education with a strong foundation in mathematics, physics, and computer science.",
   },
+  {
+    period: "2020 – 2021",
+    title: "Secondary School Certificate (SSC)",
+    subtitle: "Sri Chaitanya High School",
+    description:
+      "Completed 10th grade with a strong academic record, building a solid foundation in core subjects including mathematics and science.",
+  },
 ];
 
 const learningFocus = [
