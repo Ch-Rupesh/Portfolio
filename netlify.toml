@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm run build && cp public/__forms.html .next/"
   publish = ".next"
 
 [[plugins]]
