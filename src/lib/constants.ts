@@ -187,24 +187,31 @@ export interface Achievement {
 
 export const achievementsData: Achievement[] = [
   {
+    id: "hackathon-prize",
+    title: "Consolation Prize — 36-hour Hackathon",
+    description:
+      "Recognized for building an innovative solution during an intense 36-hour hackathon competition.",
+    icon: "FaMedal",
+  },
+  {
     id: "president-club",
-    title: "President — DataScience AI Dynamos Club",
+    title: "President of DataScience AI Dynamos Club",
     description:
       "Led the university's premier AI and Data Science club, driving initiatives, workshops, and collaborative learning sessions.",
     icon: "FaCrown",
   },
   {
-    id: "national-hackathon",
-    title: "National-Level Hackathon Organizer",
+    id: "international-hackathon",
+    title: "International-level Hackathon Organizer",
     description:
-      "Organized and managed a national-level hackathon, coordinating participants, mentors, and judges for a successful event.",
+      "Organized and managed an international-level hackathon, bringing together global talent to solve real-world challenges.",
     icon: "FaTrophy",
   },
   {
-    id: "international-hackathon",
-    title: "International-Level Hackathon Organizer",
+    id: "national-hackathon",
+    title: "National-level Hackathon Organizer",
     description:
-      "Organized and managed an international-level hackathon, bringing together global talent to solve real-world challenges.",
+      "Organized and managed a national-level hackathon, coordinating participants, mentors, and judges for a successful event.",
     icon: "FaTrophy",
   },
   {
@@ -220,13 +227,6 @@ export const achievementsData: Achievement[] = [
     description:
       "Received the prestigious HDFC Parivartan Scholarship for academic excellence and demonstrated potential.",
     icon: "FaAward",
-  },
-  {
-    id: "hackathon-prize",
-    title: "Consolation Prize — 36-Hour Hackathon",
-    description:
-      "Recognized for building an innovative solution during an intense 36-hour hackathon competition.",
-    icon: "FaMedal",
   },
 ];
 
