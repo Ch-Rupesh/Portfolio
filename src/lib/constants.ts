@@ -242,7 +242,7 @@ export interface Certification {
 export const certificationsData: Certification[] = [
   {
     id: "cambridge-linguaskill",
-    title: "Cambridge English Written Linguaskill Exam",
+    title: "Linguaskill General",
     issuer: "Cambridge Assessment English",
     skills: ["English Proficiency", "Written Communication", "Professional English"],
   },

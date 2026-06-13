@@ -40,7 +40,7 @@ export default function CertificationsPage() {
 
             {/* Certificate title */}
             <h2 className="mt-6 text-2xl font-bold text-gray-900">
-              Cambridge English Written Linguaskill Exam
+              Linguaskill General
             </h2>
 
             {/* Issuer */}
@@ -48,17 +48,28 @@ export default function CertificationsPage() {
               Issued by Cambridge Assessment English
             </p>
 
-            {/* Verified badge */}
-            <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5">
-              <HiCheckBadge className="text-lg text-emerald-500" />
-              <span className="text-sm font-semibold text-emerald-700">
-                Verified
-              </span>
+            {/* Verified badge and Link */}
+            <div className="mt-6 flex items-center justify-center gap-3">
+              <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5">
+                <HiCheckBadge className="text-lg text-emerald-500" />
+                <span className="text-sm font-semibold text-emerald-700">
+                  Verified
+                </span>
+              </div>
+              
+              <a
+                href="https://drive.google.com/file/d/15uQkvAHt4hFDzaOrzu0WtA0hdnYabHyc/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-cyan-200 bg-cyan-50 px-4 py-1.5 text-sm font-semibold text-cyan-700 transition-colors hover:bg-cyan-100"
+              >
+                View Certificate
+              </a>
             </div>
 
             {/* Description */}
             <p className="mt-6 max-w-md text-sm leading-relaxed text-gray-500">
-              Successfully completed the Cambridge English Written Linguaskill
+              Successfully completed the Linguaskill General
               examination, demonstrating proficiency in professional English
               writing and communication skills recognized internationally.
             </p>
