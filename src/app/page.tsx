@@ -17,30 +17,40 @@ function useTypingAnimation(words: string[]) {
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const tick = useCallback(() => {
-    const currentWord = words[wordIndex];
-
-    if (!isDeleting) {
-      setDisplayText(currentWord.slice(0, displayText.length + 1));
-      if (displayText.length === currentWord.length) {
-        setTimeout(() => setIsDeleting(true), 1800);
-        return;
-      }
-    } else {
-      setDisplayText(currentWord.slice(0, displayText.length - 1));
-      if (displayText.length === 0) {
-        setIsDeleting(false);
-        setWordIndex((prev) => (prev + 1) % words.length);
-        return;
-      }
-    }
-  }, [displayText, isDeleting, wordIndex, words]);
-
   useEffect(() => {
-    const speed = isDeleting ? 40 : 80;
+    // If words array is empty or undefined, do nothing
+    if (!words || words.length === 0) return;
+
+    const currentWord = words[wordIndex];
+    let speed = isDeleting ? 40 : 80;
+
+    const tick = () => {
+      if (!isDeleting) {
+        setDisplayText(currentWord.slice(0, displayText.length + 1));
+        if (displayText.length === currentWord.length) {
+          setIsDeleting(true);
+        }
+      } else {
+        setDisplayText(currentWord.slice(0, displayText.length - 1));
+        if (displayText.length === 0) {
+          setIsDeleting(false);
+          setWordIndex((prev) => (prev + 1) % words.length);
+        }
+      }
+    };
+
+    // Pause before starting to delete
+    if (!isDeleting && displayText === currentWord) {
+      speed = 1800;
+    } 
+    // Pause before starting to type the next word
+    else if (isDeleting && displayText === "") {
+      speed = 400;
+    }
+
     const timer = setTimeout(tick, speed);
     return () => clearTimeout(timer);
-  }, [tick, isDeleting]);
+  }, [displayText, isDeleting, wordIndex, words]);
 
   return displayText;
 }
