@@ -37,6 +37,14 @@ export default function RootLayout({
         <Navbar />
         <main className="relative z-10 flex-1">{children}</main>
         <Footer />
+        {/* Hidden form for Netlify bots */}
+        <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+          <input type="text" name="name" />
+          <input type="email" name="email" />
+          <input type="text" name="subject" />
+          <textarea name="message"></textarea>
+          <input type="text" name="bot-field" />
+        </form>
       </body>
     </html>
   );
