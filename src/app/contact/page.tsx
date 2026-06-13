@@ -125,13 +125,19 @@ export default function ContactPage() {
                   exit={{ opacity: 0 }}
                   name="contact"
                   method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
                   onSubmit={handleSubmit}
                   className="space-y-5"
                   ref={formRef}
                 >
                   {/* Hidden input required for Netlify Forms submission */}
                   <input type="hidden" name="form-name" value="contact" />
-                  <input type="hidden" name="bot-field" value="" />
+                  <p className="hidden">
+                    <label>
+                      Don’t fill this out if you are human: <input name="bot-field" />
+                    </label>
+                  </p>
 
                   <div>
                     <label
