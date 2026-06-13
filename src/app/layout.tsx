@@ -12,15 +12,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Rupesh Siva Mani Kanta | AI Engineer & Software Developer",
+  title: "Chitturi Rupesh Siva Mani Kanta | Software Developer",
   description:
-    "Portfolio of Rupesh Siva Mani Kanta — AI Engineer & Software Developer specializing in machine learning, full-stack development, and building intelligent solutions.",
+    "Portfolio of Chitturi Rupesh Siva Mani Kanta — Software Developer specializing in full-stack development and building scalable, intelligent solutions.",
   keywords: [
-    "AI Engineer",
     "Software Developer",
+    "Full Stack Developer",
     "Portfolio",
-    "Machine Learning",
-    "Full Stack",
+    "React",
     "Next.js",
   ],
 };

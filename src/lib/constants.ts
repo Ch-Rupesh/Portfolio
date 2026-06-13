@@ -5,10 +5,10 @@
 // ── Personal Info ──────────────────────────────
 
 export const personalInfo = {
-  name: "Rupesh Siva Mani Kanta",
+  name: "Chitturi Rupesh Siva Mani Kanta",
   firstName: "Rupesh",
   tagline:
-    "Software Engineer passionate about AI, scalable systems, and impactful digital experiences.",
+    "Software Developer passionate about full-stack development, scalable systems, and building intelligent solutions.",
   email: "2300031153cseh1@gmail.com",
   linkedin: "https://www.linkedin.com/in/rupeshsivamanikantachitturi/",
   github: "https://github.com/Ch-Rupesh",
