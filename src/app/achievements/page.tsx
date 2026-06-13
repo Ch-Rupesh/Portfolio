@@ -15,6 +15,13 @@ interface Achievement {
 
 const achievements: Achievement[] = [
   {
+    icon: FaCode,
+    title: "Consolation Prize — 36-hour Hackathon",
+    description:
+      "Recognized for an innovative solution developed during an intense 36-hour hackathon, demonstrating perseverance, creativity, and technical prowess.",
+    color: "#ef4444",
+  },
+  {
     icon: FaCrown,
     title: "President of DataScience AI Dynamos Club",
     description:
@@ -22,18 +29,18 @@ const achievements: Achievement[] = [
     color: "#f59e0b",
   },
   {
-    icon: FaTrophy,
-    title: "National-level Hackathon Organizer",
-    description:
-      "Organized and managed a national-level hackathon, coordinating logistics, mentorship, and judging to deliver a seamless competitive programming experience.",
-    color: "#3b82f6",
-  },
-  {
     icon: FaMedal,
     title: "International-level Hackathon Organizer",
     description:
       "Organized and managed an international-level hackathon, bringing together participants from across the globe to innovate and collaborate on cutting-edge solutions.",
     color: "#8b5cf6",
+  },
+  {
+    icon: FaTrophy,
+    title: "National-level Hackathon Organizer",
+    description:
+      "Organized and managed a national-level hackathon, coordinating logistics, mentorship, and judging to deliver a seamless competitive programming experience.",
+    color: "#3b82f6",
   },
   {
     icon: FaUsers,
@@ -48,13 +55,6 @@ const achievements: Achievement[] = [
     description:
       "Received the prestigious HDFC Parivartan Scholarship for academic excellence and demonstrated commitment to personal and professional growth.",
     color: "#10b981",
-  },
-  {
-    icon: FaCode,
-    title: "Consolation Prize — 36-hour Hackathon",
-    description:
-      "Recognized for an innovative solution developed during an intense 36-hour hackathon, demonstrating perseverance, creativity, and technical prowess.",
-    color: "#ef4444",
   },
 ];
 
